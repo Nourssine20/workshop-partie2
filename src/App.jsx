@@ -12,6 +12,7 @@ const Products = React.lazy(()=> import ('./components/Products'));
 const Events = React.lazy(()=> import ('./components/Events'));
 const EventDetails = React.lazy(()=> import ('./components/EventDetails'));
 import NotFound from './components/NotFound';
+import CounterRedux from './components/CounterRedux';
 const NavigationBar = React.lazy(() => import('./components/Navbar'));
 
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/products" element={<Products />} />
        {/* <Route path="/events" element={<Events />} />*/}
        <Route path="*" element={<NotFound />} />
+       <Route path="/reduxcounter" element={<CounterRedux/>} />
        </>
        )}
       </Routes>
